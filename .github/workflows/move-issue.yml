@@ -14,6 +14,6 @@ jobs:
           uses: 1natsu172/github-action-auto-move-related-issue@v1
           with:
         # Secret GitHub API token to use for API requests.
-            github_token: ${{ secrets.gh_secret }}
+            github_token: ${{ secrets.ACCESS_TOKEN }}
       # This Action's config.
             config: move-issue-config.yml
