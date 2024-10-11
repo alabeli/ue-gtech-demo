@@ -8,12 +8,12 @@ jobs:
   move_issue:
         runs-on: ubuntu-latest
         steps:
-        - name: auto-move-related-issue
       # You may pin to the exact commit or the version.
       # uses: 1natsu172/github-action-auto-move-related-issue@25117b43182a8d55ae82fcfdf6d9f80202e6f660
-          uses: 1natsu172/github-action-auto-move-related-issue@v1
-          with:
+          - uses: 1natsu172/github-action-auto-move-related-issue@v1
+            id: auto-move-related-issue_action
+            with:
         # Secret GitHub API token to use for API requests.
-            github_token: ${{ secrets.ACCESS_TOKEN }}
+              #github_token: ${{ secrets.ACCESS_TOKEN }}
       # This Action's config.
-            config: move-issue-config.yml
+              config: move-issue-config.yml
