@@ -16,4 +16,4 @@ jobs:
         # Secret GitHub API token to use for API requests.
             github_token: ${{ github.token }}
       # This Action's config.
-            config: auto-move-related-issue-config.yml
+            config: move-issue-config.yml
