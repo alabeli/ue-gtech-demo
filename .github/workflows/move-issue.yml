@@ -20,4 +20,4 @@ jobs:
         with:
           project: crew pairing generator
           column: In Progress
-          repo-token: ${{ secrets.ACCESS_TOKEN }}
+          repo-token: ${{ secrets.gh_secret }}
